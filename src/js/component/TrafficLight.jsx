@@ -13,15 +13,15 @@ const TrafficLight = () => {
 		<main>
 			<div className="p-box"></div>
 			<div className="box-light">
-				<div className={`red ${selection == red ? "luz-encendida" : ""}`}
+				<div className={`red ${selection == "red" ? "light-on" : ""}`}
 					onClick={() => changeColor("red")}>
 
 				</div>
-				<div className={`yellow ${selection == yellow ? "luz-encendida" : ""}`}
+				<div className={`yellow ${selection == "yellow" ? "light-on" : ""}`}
 					onClick={() => changeColor("yellow")}>
 
 				</div>
-				<div className={`red ${selection == green ? "luz-encendida" : ""}`}
+				<div className={`green ${selection == "green" ? "light-on" : ""}`}
 					onClick={() => changeColor("green")}>
 
 				</div>
